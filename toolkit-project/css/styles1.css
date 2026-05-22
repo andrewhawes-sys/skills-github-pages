@@ -21,6 +21,12 @@ body {
   padding: 2.5rem 0;
 }
 
+nav a {
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.08em;
