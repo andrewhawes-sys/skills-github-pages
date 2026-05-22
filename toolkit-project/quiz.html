@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post-Test</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dyslipidemia Toolkit Post-Test</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">Educational Toolkit</p>
+      <h1>Dyslipidemia Guideline Post-Test</h1>
+      <p class="intro">
+        A generic multiple-choice quiz based on major themes from the 2026 dyslipidemia guideline.
+      </p>
+    </div>
+  </header>
 
-<header>
-    <h1>Post-Test</h1>
-</header>
+  <main class="container">
+    <section class="card" aria-labelledby="instructions">
+      <h2 id="instructions">Instructions</h2>
+      <p>Select the best answer for each question, then submit the quiz to see your score.</p>
+      <p class="note">
+        This sample quiz is for educational demonstration only. It does not replace clinical judgment or official CME review.
+      </p>
+    </section>
 
-<main>
-    <p>
-        Click below to begin the educational post-test.
-    </p>
+    <form id="quizForm" class="quiz" novalidate></form>
 
-    <a class="button"
-       href="https://example.com">
-       Begin Quiz
-    </a>
-</main>
+    <section id="results" class="card results" aria-live="polite" hidden></section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Educational use only. Recommendations should be interpreted in the context of individual patient circumstances and evolving evidence.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/quiz.js"></script>
 </body>
 </html>
